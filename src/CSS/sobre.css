@@ -1,0 +1,475 @@
+/* ---------------------- Botoes ---------------------- */
+
+.button-dark-primary {
+  background-color: #131313;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  width: 186px;
+  height: 60px;
+  border: none;
+  border-radius: 9px;
+  padding: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.button-dark-primary:hover {
+  background-color: #808080;
+  transform: scale(1.03);
+}
+.button-dark-secondary {
+  background-color: #181818;
+  color: #808080;
+  font-size: 18px;
+  font-weight: 500;
+  width: 186px;
+  height: 60px;
+  border: none;
+  border-radius: 9px;
+}
+
+.button-light-primary {
+  background-color: #131313;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  width: 186px;
+  height: 60px;
+  border: none;
+  border-radius: 9px;
+}
+
+.button-light-secondary {
+  background-color: #f3f3f3;
+  color: #181818;
+  font-size: 18px;
+  font-weight: 500;
+  width: 186px;
+  height: 60px;
+  border: none;
+  border-radius: 9px;
+}
+
+/* ---------------------- Global Styles ---------------------- */
+body {
+  background: #0d0d0d;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color #fbfbfb;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  );
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* ---------------------- cabecalho ---------------------- */
+.sessao-cabecalho {
+  height: 180px;
+}
+
+.sessao-cabecalho-container {
+  background: #18181d;
+  width: 1024px;
+  height: 60px;
+  border-radius: 12px;
+  margin: 60px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sessao-cabecalho-container ul {
+  gap: 20px;
+  color: #808080;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.sessao-cabecalho-container a {
+  list-style: none;
+  text-decoration: none;
+  color: #808080;
+}
+.sessao-cabecalho-container ul li a {
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.sessao-cabecalho-container ul li:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+.sessao-cabecalho-container ul button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.light-mode {
+  background: #fbfbfb;
+  color: #000000;
+}
+
+.dark-mode {
+  background: #000000;
+  color: #fbfbfb;
+}
+
+.sessao-sobre-mim {
+  height: 100vh;
+  margin: auto;
+}
+
+.sessao-sobre-mim-container {
+  max-width: 1024px;
+}
+
+sessao-sobre-mim-container .line hr {
+  position: relative;
+  width: 100vw;
+  margin: 0; /* remove espaçamentos padrão */
+  position: relative;
+  left: 52%;
+  transform: translateX(-52%);
+}
+
+.header-sobre-mim {
+  width: 100%;
+  max-width: 1024px;
+  height: 200px;
+  margin-top: 50px;
+}
+
+.header-sobre-mim h1 {
+  font-size: 80px;
+  padding: 0;
+  margin: 0;
+}
+.header-sobre-mim p {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.frame-540 {
+  display: flex;
+  width: 1024px;
+  align-items: center;
+  margin-top: 40px;
+  gap: 100px;
+}
+
+.fram-530 {
+  display: flex;
+  width: 605px;
+  max-width: 605px;
+  height: 825px;
+}
+
+.fram-530 h2 {
+  width: 605px;
+  max-width: 605px;
+}
+
+.retrato-quadrado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.retrato-quadrado-image {
+  width: 343px;
+  height: 443px;
+
+  border-radius: 10px;
+  border: solid 1px;
+  padding: 10px;
+}
+
+.retrato-quadrado-image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+/* ---------------------------------------------------------- rodape ---------------------- */
+.footer {
+  width: 100%;
+  max-width: 1024px;
+  margin: 50px auto;
+  margin-top: 400px;
+  align-items: flex-start;
+}
+
+.rodape {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.footer-group-tho {
+  margin: 0;
+  display: flex;
+}
+.footer-group-tho h1 {
+  margin: 0;
+  font-size: 16px;
+}
+.footer-group-tho ul {
+  margin: 0;
+  list-style-type: none;
+}
+.footer-group-tho ul li {
+  padding: 5px;
+}
+
+@media (max-width: 450px) {
+  /* ---------------------- Botoes ---------------------- */
+
+  .button-dark-primary {
+    background-color: #131313;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-radius: 9px;
+    padding: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .button-dark-primary:hover {
+    background-color: #808080;
+    transform: scale(1.03);
+  }
+  .button-dark-secondary {
+    background-color: #181818;
+    color: #808080;
+    font-size: 18px;
+    font-weight: 500;
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-radius: 9px;
+  }
+
+  .button-light-primary {
+    background-color: #131313;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-radius: 9px;
+  }
+
+  .button-light-secondary {
+    background-color: #f3f3f3;
+    color: #181818;
+    font-size: 18px;
+    font-weight: 500;
+    width: 186px;
+    height: 60px;
+    border: none;
+    border-radius: 9px;
+  }
+
+  /* ---------------------- Global Styles ---------------------- */
+
+  /* ---------------------- cabecalho ---------------------- */
+  body {
+    max-width: 100%;
+    padding: 30px;
+  }
+  .sessao-cabecalho {
+    height: 100%;
+  }
+  .nav {
+    display: none;
+  }
+  .sessao-cabecalho-container {
+    background: #18181d;
+    width: 100%;
+    height: 60px;
+    border-radius: 12px;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .sessao-cabecalho-container ul {
+    gap: 20px;
+    color: #808080;
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+  .sessao-cabecalho-container a {
+    list-style: none;
+    text-decoration: none;
+    color: #808080;
+  }
+  .sessao-cabecalho-container ul li a {
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease,
+      box-shadow 0.3s ease;
+  }
+  .sessao-cabecalho-container ul li:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+  }
+
+  .sessao-cabecalho-container ul button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .light-mode {
+    background: #fbfbfb;
+    color: #000000;
+  }
+
+  .dark-mode {
+    background: #000000;
+    color: #fbfbfb;
+  }
+
+  .sessao-sobre-mim {
+    height: 100%;
+    margin: auto;
+  }
+
+  .sessao-sobre-mim-container {
+    max-width: 100%;
+  }
+
+  sessao-sobre-mim-container .line hr {
+    position: relative;
+    width: 100%;
+    margin: 0; /* remove espaçamentos padrão */
+    position: relative;
+    left: 52%;
+    transform: translateX(-52%);
+  }
+
+  .header-sobre-mim {
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+    margin-top: 50px;
+  }
+
+  .header-sobre-mim h1 {
+    font-size: 32px;
+    padding: 0;
+    margin: 0;
+  }
+  .header-sobre-mim p {
+    margin-top: 0;
+    font-size: 18px;
+    text-align: justify;
+  }
+
+  .frame-540 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    gap: 100px;
+  }
+  .frame-540 p {
+    text-align: justify;
+  }
+
+  .fram-530 {
+    display: flex;
+    width: 605px;
+    max-width: 100%;
+    height: 825px;
+  }
+
+  .fram-530 h2 {
+    width: 605px;
+    max-width: 605px;
+  }
+
+  .fram-530 p {
+    text-align: justify;
+  }
+  .retrato-quadrado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .retrato-quadrado-image {
+    width: 100%;
+    height: 443px;
+
+    border-radius: 10px;
+    border: solid 1px;
+    padding: 10px;
+  }
+
+  .retrato-quadrado-image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+  }
+  /* ---------------------------------------------------------- rodape ---------------------- */
+  .footer {
+    width: 100%;
+    max-width: 1024px;
+    margin: 50px auto;
+    margin-top: 400px;
+    align-items: flex-start;
+  }
+
+  .rodape {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+  }
+
+  .footer-group-tho {
+    margin: 0;
+    display: flex;
+  }
+  .footer-group-tho h1 {
+    margin: 0;
+    font-size: 16px;
+  }
+  .footer-group-tho ul {
+    margin: 0;
+    list-style-type: none;
+  }
+  .footer-group-tho ul li {
+    padding: 5px;
+  }
+}
